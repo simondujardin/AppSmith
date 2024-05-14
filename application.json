@@ -26,9 +26,13 @@
     }
   },
   "color": "#F3F1C7",
+  "icon": "flight",
   "unpublishedCustomJSLibs": [
     {
       "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    },
+    {
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
     }
   ],
   "publishedCustomJSLibs": [],
