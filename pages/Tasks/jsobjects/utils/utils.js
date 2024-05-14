@@ -7,7 +7,8 @@ export default {
 
 	run : async () =>{
 		try{
-			const user = jsonwebtoken.verify(appsmith.store.token, 'secret')
+			console.log(appsmith.store.token)
+			const user = jsonwebtoken.verify(appsmith.store.token, 'token')
 			return user;
 		}catch(error){
 			return showAlert('Session expired. Please re-login','warning').then(()=> appsmith.mode === 'EDIT' ? '': navigateTo("Authentication") )
